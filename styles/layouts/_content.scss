@@ -1,0 +1,235 @@
+.content {
+  width: 100%;
+  height: auto;
+  padding-left: 320px;
+}
+
+.content--dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+
+  .bg--gray {
+    background-color: $bg-black;
+  }
+
+  .bg--white {
+    background-color: $bg-black-olive;
+  }
+
+  .active {
+    background-color: $bg-black;
+  }
+
+  .btn {
+    background-color: $white;
+    color: $gray-olive;
+    border: 2px $white solid;
+  }
+
+  .btn:hover {
+    background: $black;
+    color: $white;
+    transition: 0.5s;
+  }
+
+  .header {
+    background-color: $darkBlue;
+
+    &__logo {
+      &--light {
+        display: none;
+      }
+
+      &--dark {
+        display: block;
+      }
+    }
+
+    &__icon {
+      &--light {
+        display: none;
+      }
+
+      &--dark {
+        display: block;
+        color: $white;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__btn {
+      background-color: $white;
+    }
+
+    &__span {
+      background: $black;
+      color: $black;
+    }
+  }
+
+  .sidebar {
+    background-color: $black;
+
+    &__header {
+      border-bottom: 1px solid $darkBlue;
+    }
+
+    &__item::before {
+      background-color: $bg-black;
+    }
+
+    &__logo {
+      &--light {
+        display: none;
+      }
+
+      &--dark {
+        display: block;
+      }
+    }
+
+    &__icon {
+      &--light {
+        display: none;
+      }
+
+      &--dark {
+        display: block;
+        color: $white;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__img {
+      filter: invert(1);
+    }
+
+    &__title {
+      color: $white;
+    }
+
+    &__gmail {
+      background-color: $black;
+      border-top: 1px solid $darkBlue;
+    }
+
+    &__gmail-name {
+      color: $white;
+    }
+  }
+
+  .home {
+    background-color: $bg-black;
+
+    &__icon {
+      filter: invert(1);
+    }
+
+    &__btn {
+      color: $white;
+      border: 2px solid $white;
+    }
+
+    &__btn:hover {
+      background-color: $white;
+      border-color: $white;
+      color: $black-olive;
+      transform: translateY(-3px);
+    }
+  }
+
+  .about {
+    background-color: $bg-black-olive;
+
+    &__item-title {
+      color: $white;
+    }
+  }
+
+  .service {
+    background-color: $bg-black;
+
+    &__item {
+      background-color: $black;
+    }
+
+    &__item:hover {
+      .service {
+        &__btn {
+          color: $white;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+
+    &__item-img {
+      filter: invert(1);
+    }
+
+    &__btn {
+      color: $blue-powder;
+    }
+  }
+
+  .slider--portfolio {
+    background-color: $bg-black-olive;
+  }
+
+  .testimonial {
+    background-color: $bg-black;
+
+    &__content {
+      background-color: $bg-black-olive;
+    }
+    .slick-dots li button:before {
+      border: 2px solid $white;
+    }
+    .slick-dots li button:after {
+      background: $white;
+    }
+  }
+
+  .slider--blog {
+    background-color: $bg-black-olive;
+  }
+
+  .contact {
+    background-color: $bg-black;
+
+    &__inner {
+      background-color: $bg-black-olive;
+    }
+
+    &__left {
+      background-color: $bg-black-olive;
+    }
+
+    &__left-subTitle {
+      color: $white;
+    }
+  }
+}
+
+.content {
+  @media (max-width: $desktopWide) {
+    padding: 0;
+  }
+}

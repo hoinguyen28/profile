@@ -1,0 +1,32 @@
+//Include styles for Modern Browsers
+@charset 'UTF-8';
+
+// Reset
+@import 'base/reset';
+
+// Variables
+@import 'base/variables';
+@import 'base/font';
+
+//Helpers classes
+@import 'base/helpers';
+
+// Base Style
+@import 'base/grid';
+@import 'base/typography';
+
+// Layouts
+@import 'layouts/header';
+@import 'layouts/footer';
+
+//Components
+@import './layouts/content';
+@import './components/sidebar';
+@import './components/boxText';
+@import './components/home';
+@import './components/about';
+@import './components/slider';
+@import './components/service';
+@import './components/testimonial';
+@import './components/contact';
+@import './components/modal';

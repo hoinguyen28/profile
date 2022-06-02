@@ -1,0 +1,151 @@
+.sidebar {
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
+  z-index: 98;
+  transition: all 0.5s ease;
+
+  &__header {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid $silver;
+    padding: 40px;
+  }
+
+  &__logo {
+    max-width: 120px;
+    display: block;
+    &--light {
+      display: block;
+    }
+    &--dark {
+      display: none;
+    }
+  }
+
+  &__icon {
+    color: $black;
+    line-height: 0;
+    font-size: 23px;
+    cursor: pointer;
+    position: fixed;
+    left: 250px;
+    top: 31px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    &--dark {
+      display: none;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    height: auto;
+    padding: 60px 40px;
+  }
+
+  &__li {
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 0 0 8px;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: $black-olive;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 13px 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__item::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-color: $pigeon-post;
+  }
+
+  &__item.active::before,
+  &__item:hover::before {
+    width: 100%;
+  }
+
+  &__img {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: $black-olive;
+    text-transform: capitalize;
+  }
+
+  &__gmail {
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid $silver;
+  }
+
+  &__gmail-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+
+  &__gmail-text {
+    text-decoration: none;
+    color: $gray;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  @media (max-width: $desktopWide) {
+    transform: translateX(-500px);
+    &__header {
+      padding: 20px;
+    }
+    &__icon {
+      top: 14px;
+    }
+  }
+}
+.active {
+  background-color: $pigeon-post;
+  width: 100%;
+  border-radius: 5px;
+}

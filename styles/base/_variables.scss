@@ -1,0 +1,43 @@
+// VARIABLES
+// Define all variables (aside from colors) in this document. This includes breakpoint, sizes, etc.
+
+// Color Variable
+$black: #000;
+$black-olive: #1a1a1a;
+$bg-black: #191c26;
+$bg-black-olive: #111319;
+$light-black: #323232;
+$white: #fff;
+$silver: #cbd3d9;
+
+$pigeon-post: #f5f5f5;
+$darkBlue: #34495e;
+
+// Gray
+$gray: #7e7e7e;
+$gray-olive: #666;
+$bg-gray: #f5f8fc;
+
+// Blue
+$blue-powder: #a9afc3;
+// ------------------------------------------------------------
+// Breakpoint Variable
+
+// Mobile
+$mobileOnly: 767px;
+$mobilePortraitOnly: 479px;
+$mobilePortrait: 360px;
+$mobileLandScape: 576px;
+
+// Tablet
+$tablet: 768px;
+$tabletWide: 874px;
+$tabletOnly: 992px;
+
+// Desktop
+$desktop: 1040px;
+$desktopWide: 1199px;
+$desktopWideLarge: 1366px;
+$desktopSupperWide: 1600px;
+$desktopSupper: 1703px;
+$desktopSupperWideLarge: 1880px;

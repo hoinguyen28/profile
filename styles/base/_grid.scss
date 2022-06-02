@@ -1,0 +1,31 @@
+// Grid variables
+$containerMarginMobile: 20px;
+$containerMarginTablet: 40px;
+$container: 960px;
+$containerWide: 1180px;
+$containerSuperWide: 1280px;
+$containerMediumWide: 1224px;
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0 20px;
+  // position: relative;
+  clear: both;
+
+  @media (min-width: $tablet) {
+  }
+
+  @media (min-width: $desktop) {
+  }
+
+  @media (min-width: $desktopWide) {
+  }
+
+  @media (max-width: $desktopSupperWide) {
+    max-width: 1170px;
+  }
+}

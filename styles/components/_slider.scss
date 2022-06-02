@@ -1,0 +1,139 @@
+.slider {
+  padding-bottom: 120px;
+  &__wrap {
+    margin: 0 -20px;
+    .slick-arrow {
+      width: 65px;
+      height: 65px;
+      border: 2px solid $gray;
+      border-radius: 50%;
+      z-index: 6;
+      transition: 0.5s;
+      top: 41%;
+    }
+
+    .slick-prev:before {
+      display: none;
+    }
+
+    .slick-prev:after {
+      display: block;
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+
+    .slick-prev:after {
+      content: url(../../public/assets/images/arrow.4e813859.svg);
+      -webkit-filter: invert(0.4);
+      filter: invert(0.4);
+      transition: 0.5s;
+    }
+
+    .slick-prev:hover {
+      filter: brightness(200%);
+      background: $black;
+      border-color: $white;
+    }
+
+    .slick-next:before {
+      display: none;
+    }
+
+    .slick-next:after {
+      content: url(../../public/assets/images/arrow.4e813859.svg);
+      -webkit-filter: invert(0.4);
+      filter: invert(0.4);
+      transition: 0.5s;
+    }
+
+    .slick-next:hover {
+      background: $black;
+      border-color: $white;
+      filter: brightness(200%);
+    }
+  }
+  &__item {
+    padding: 0 15px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__images {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 420px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 9px;
+  }
+
+  &__img {
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px;
+    height: 420px;
+    width: 100%;
+    max-width: 100%;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__img:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__date {
+    font-size: 16px;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  &__job::before {
+    position: relative;
+    content: '.';
+    font-size: 40px;
+    top: -3px;
+    color: $gray;
+    padding: 0 5px;
+  }
+  &--portfolio {
+    .slider {
+      &__wrap {
+        .slick-arrow {
+          top: 47%;
+        }
+      }
+      &__date {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $desktopSupperWideLarge) {
+    &__wrap {
+      .slick-prev {
+        left: 0;
+        background: $black;
+        border-color: $white;
+      }
+      &__images {
+        height: 350px;
+      }
+      .slick-prev:after {
+        filter: invert(1);
+      }
+      .slick-next {
+        right: 0;
+        background: $black;
+        border-color: $white;
+      }
+      .slick-next:after {
+        filter: invert(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.home {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  background-color: $bg-gray;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__content {
+    padding: 100px 20px;
+  }
+
+  &__img {
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    height: auto;
+    -webkit-mask-size: auto auto;
+    -webkit-mask-image: url(../../public/assets/images/hero-shape.08f0582e.svg);
+  }
+
+  &__subTitle {
+    color: $gray-olive;
+    font-weight: 500;
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0 12px;
+    letter-spacing: -2px;
+  }
+
+  &__description {
+    max-width: 500px;
+    margin: 0 auto 32px;
+  }
+
+  &__icons {
+    margin-bottom: 25px;
+  }
+
+  &__icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    line-height: 1;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__icon:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
+
+  &__btn {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: $black-olive;
+    display: inline-block;
+    border-radius: 30px;
+    border: 2px solid $gray;
+    padding: 8px 35px 7px;
+    transition: all 0.3s ease;
+  }
+
+  &__btn:hover {
+    background-color: $black-olive;
+    border-color: $black-olive;
+    color: $white;
+    transform: translateY(-3px);
+  }
+  @media (max-width: $desktopSupperWide) {
+    &__img {
+      width: 245px;
+      height: 245px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
